@@ -1,0 +1,205 @@
+/* 
+main color: #5ab450
+main background color: #fafafa 
+*/
+
+/* general */
+/* tutaj niektóre mogą myć nieużywane w template, to możesz poszukać i pousuwać niepotrzebne */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat !important;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.primary-header {
+  grid-column: 1 / -1;
+  font-size: 3rem;
+}
+
+.secondary-header {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
+
+.third-header {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* header */
+.header {
+  background-color: #111;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.fill {
+  height: 100px;
+}
+
+.container-header {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo:link,
+.logo:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.logo-green {
+  background-color: #5ab450;
+  padding: 0.5rem;
+  color: #111;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav--list-item {
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.nav--list-item:hover {
+  border-bottom: 3px solid #5ab450;
+}
+
+.nav--list-link:link,
+.nav--list-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.btn-nav {
+  padding: 1.3rem 3rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn--nav-link {
+  font-size: 1.5rem !important;
+  padding: 1.25rem 0;
+  font-weight: 500;
+}
+
+.btn--nav-blue {
+  background-color: #316dd9;
+}
+
+.btn--nav-blue:hover {
+  background-color: #0a51d5;
+}
+
+.btn--nav-green {
+  background-color: #5ab450;
+}
+
+.btn--nav-green:hover {
+  background-color: #409037;
+}
+
+/* footer */
+.footer {
+  background-color: #111;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.footer-header {
+  padding-top: 4.8rem;
+  font-size: 3.5rem;
+}
+
+.footer-hub {
+  background-color: #5ab450;
+  color: #111;
+  padding: 0.5rem;
+}
+
+.footer-list {
+  list-style-type: none;
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer--list-link:link,
+.footer--list-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.observe-us {
+  margin-top: 3rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.socials a svg {
+  transition: all 0.3s;
+}
+
+.socials a svg:hover {
+  stroke: #409037;
+}
+
+.footer-line {
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  margin-top: 3rem;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 1.4rem;
+  padding: 4rem 0 4rem 0;
+}
